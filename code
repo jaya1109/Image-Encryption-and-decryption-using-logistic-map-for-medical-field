@@ -1,0 +1,38 @@
+clear all; 
+clc;       
+image = imread('C:\Program Files\MATLAB\R2017b\toolbox\images\imdata\lungs.jpeg');
+if size(image, 3) == 3
+    image1 = rgb2gray(image); % Convert to grayscale if image is RGB
+else
+    image1 = image;
+end
+image1 = imresize(image1, [256 256]); 
+[m, n] = size(image1); 
+subplot(2, 2, 1), imshow(image1);
+title('Original Image');
+x = 0.1; 
+r = 3.99; 
+seq = zeros(1, m * n); 
+for k = 1:(m * n - 1)
+    x = r * x * (1 - x);
+    seq(k) = x * 255; 
+end
+seq = round(seq); 
+image4 = zeros(m, n, 'uint8'); 
+image5 = zeros(m, n, 'uint8'); 
+count = 1;
+for i = 1:m
+    for j = 1:n
+        image4(i, j) = bitxor(seq(count), image1(i, j)); 
+        image5(i, j) = bitxor(seq(count), image4(i, j)); 
+        count = count + 1;
+    end
+end
+subplot(2, 2, 2), imshow(image4);
+title('Encrypted Image');
+subplot(2, 2, 3), imshow(image5);
+title('Decrypted Image');
+subplot(2, 2, 4), imhist(image4);
+title('Histogram of Encrypted Image');
+j = entropy(image4);
+disp(['Entropy of Encrypted Image: ', num2str(j)]);
