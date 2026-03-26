@@ -41,6 +41,7 @@ h2 {
 img {
     width: 100%;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
 .button {
@@ -67,49 +68,43 @@ img {
 <div class="section">
 <h2>📌 Project Overview</h2>
 <p>
-This project secures images using logistic map-based chaotic encryption.
-The logistic map generates pseudo-random sequences that encrypt pixel values,
-making the image unreadable without the correct key.
+This project secures medical images using logistic map-based chaotic encryption.
+It converts images into an unreadable format and restores them using a key.
 </p>
 </div>
 
 <div class="section">
 <h2>🧠 Concept</h2>
 <p>
-Logistic map is a chaotic function used for randomness:
+Logistic map generates chaotic random sequences:
 x(n+1) = r × x(n) × (1 − x(n))
-
-It is highly sensitive and used for secure encryption systems.
 </p>
 </div>
 
 <div class="section">
-<h2>⚙️ Working</h2>
+<h2>⚙️ Working Process</h2>
 <ul>
 <li>Input Image</li>
 <li>Convert to Grayscale</li>
-<li>Generate Chaotic Sequence</li>
+<li>Generate Logistic Sequence</li>
 <li>Encrypt Image</li>
-<li>Decrypt using Key</li>
+<li>Decrypt Image</li>
 </ul>
 </div>
 
 <div class="section">
 <h2>📊 Flowchart</h2>
-<img src="flowchart.png">
+<img src="Block Diagram representing the process of encryption.jpeg">
 </div>
 
 <div class="section">
 <h2>🖼️ Results</h2>
 
-<h3>Original Image</h3>
-<img src="images/input.png">
+<h3>Grayscale Conversion</h3>
+<img src="conversion of original image to gray scale.jpeg">
 
 <h3>Encrypted Image</h3>
-<img src="images/encrypted.png">
-
-<h3>Decrypted Image</h3>
-<img src="images/decrypted.png">
+<img src="logical sequence.jpeg">
 
 </div>
 
@@ -123,8 +118,8 @@ View Code on GitHub
 <div class="section">
 <h2>📌 Conclusion</h2>
 <p>
-This system ensures secure transmission of medical images using chaos theory.
-It provides high randomness and strong protection against attacks.
+This project ensures secure image encryption using chaos theory,
+providing strong protection for sensitive medical data.
 </p>
 </div>
 
