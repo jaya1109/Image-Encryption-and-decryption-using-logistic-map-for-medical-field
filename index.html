@@ -63,32 +63,36 @@ img {
 <div class="section">
 <h2>📌 Project Overview</h2>
 <p>
-This project focuses on securing medical images using a logistic map-based encryption technique.
-The logistic map is a chaotic mathematical function that generates highly random sequences.
-These sequences are used to encrypt image pixels, making the image unreadable to unauthorized users.
-The same key is used to decrypt the image and restore it to its original form.
+This project focuses on securing sensitive medical images using a logistic map-based chaotic encryption technique.
+In modern healthcare systems, protecting patient data is extremely important during transmission and storage.
+
+Traditional encryption techniques may not provide sufficient randomness, so this project uses chaos theory to enhance security.
+The logistic map generates highly unpredictable sequences which are used to encrypt image pixels.
+
+The image becomes unreadable after encryption and can only be restored using the correct key.
+This ensures strong data protection and prevents unauthorized access.
 </p>
 </div>
 
 <div class="section">
 <h2>🎯 Objectives</h2>
 <ul>
-<li>Ensure secure transmission of medical images</li>
+<li>Secure medical image transmission</li>
 <li>Prevent unauthorized access</li>
-<li>Apply chaos theory in encryption</li>
-<li>Maintain data confidentiality and integrity</li>
+<li>Use chaos theory for encryption</li>
+<li>Ensure data confidentiality</li>
 </ul>
 </div>
 
 <div class="section">
 <h2>🧠 Concept</h2>
 <p>
-The logistic map is defined as:
+The logistic map equation:
 <br><br>
 <b>x(n+1) = r × x(n) × (1 − x(n))</b>
 <br><br>
-This equation generates chaotic sequences that are highly sensitive to initial conditions.
-These sequences are used to modify pixel values of the image, ensuring strong encryption.
+This generates chaotic sequences that are highly sensitive and random.
+These sequences are used to modify pixel values and encrypt the image.
 </p>
 </div>
 
@@ -96,16 +100,15 @@ These sequences are used to modify pixel values of the image, ensuring strong en
 <h2>⚙️ Working Process</h2>
 <ul>
 <li>Input image is taken</li>
-<li>Image is converted to grayscale</li>
-<li>Logistic map generates chaotic sequence</li>
-<li>Pixel values are encrypted</li>
-<li>Encrypted image is produced</li>
-<li>Using same key, image is decrypted</li>
+<li>Converted to grayscale</li>
+<li>Logistic sequence is generated</li>
+<li>Image is encrypted</li>
+<li>Decryption restores original image</li>
 </ul>
 </div>
 
 <div class="section">
-<h2>📊 Block Diagram</h2>
+<h2>📊 Flowchart</h2>
 <img src="Block%20Diagram%20representing%20the%20process%20of%20encryption.jpeg">
 </div>
 
@@ -130,9 +133,8 @@ View Code on GitHub
 <div class="section">
 <h2>📌 Conclusion</h2>
 <p>
-This project demonstrates how chaos theory can be effectively used for secure image encryption.
-The logistic map provides strong randomness, making the encryption robust and resistant to attacks.
-This method is highly suitable for protecting sensitive medical data.
+This project demonstrates secure image encryption using chaos theory.
+It ensures confidentiality and protection of sensitive medical data.
 </p>
 </div>
 
