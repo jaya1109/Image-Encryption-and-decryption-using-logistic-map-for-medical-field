@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
     color: white;
     padding: 50px;
     text-align: center;
@@ -35,7 +35,7 @@ header {
 }
 
 h2 {
-    color: #2575fc;
+    color: #0d47a1;
 }
 
 ul {
@@ -47,6 +47,12 @@ img {
     border-radius: 10px;
     margin-top: 10px;
 }
+
+a {
+    text-decoration: none;
+    color: #0d47a1;
+    font-weight: bold;
+}
 </style>
 
 </head>
@@ -56,6 +62,7 @@ img {
 <header>
 <h1>🔐 Image Encryption & Decryption</h1>
 <p>Using Logistic Map | Medical Image Security</p>
+<p><b>Developed by Jayasudha</b></p>
 </header>
 
 <div class="container">
@@ -63,41 +70,94 @@ img {
 <div class="section">
 <h2>📌 Project Overview</h2>
 <p>
-This project focuses on securing medical images using a logistic map-based chaotic encryption technique.
-The logistic map generates highly random sequences that are used to encrypt image pixels.
+This project focuses on securing sensitive medical images using a logistic map-based chaotic encryption technique. 
+In modern healthcare systems, protecting patient data is extremely important during transmission and storage. 
 
-The encrypted image becomes unreadable and can only be restored using the correct key,
-ensuring strong security and protection of sensitive medical data.
+Traditional encryption techniques may not provide sufficient randomness, so this project uses chaos theory to enhance security. 
+The logistic map generates highly unpredictable sequences which are used to encrypt image pixels. 
+
+The image becomes unreadable after encryption and can only be restored using the correct key, ensuring strong data protection and preventing unauthorized access.
+</p>
+</div>
+
+<div class="section">
+<h2>🎯 Objectives</h2>
+<ul>
+<li>To design a secure image encryption system using logistic map-based chaotic sequences</li>
+<li>To protect sensitive medical images from unauthorized access during transmission</li>
+<li>To implement highly random encryption using chaos theory</li>
+<li>To ensure accurate decryption using the same key</li>
+<li>To maintain data confidentiality and integrity</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>🧠 Concept</h2>
+<p>
+This project is based on chaos theory using the logistic map equation:
+<br><br>
+<b>x(n+1) = r × x(n) × (1 − x(n))</b>
+<br><br>
+The generated sequence is highly sensitive and unpredictable. 
+This chaotic behavior is used to shuffle and modify image pixels, converting the original image into an encrypted unreadable format.
 </p>
 </div>
 
 <div class="section">
 <h2>⚙️ Working Process</h2>
 <ul>
-<li>Input image</li>
-<li>Grayscale conversion</li>
-<li>Logistic sequence generation</li>
-<li>Image encryption</li>
-<li>Image decryption</li>
+<li>Input medical image is taken</li>
+<li>Converted into grayscale</li>
+<li>Logistic map generates chaotic sequence</li>
+<li>Pixels are shuffled and encrypted</li>
+<li>Encrypted image is generated</li>
+<li>Same key is used for decryption</li>
+<li>Original image is restored</li>
 </ul>
 </div>
 
 <div class="section">
 <h2>📊 Flowchart</h2>
+<img src="https://raw.githubusercontent.com/jaya1109/Image-Encryption-and-decryption-using-logistic-map-for-medical-field/main/Block%20Diagram%20representing%20the%20process%20of%20encryption%20and%20decryption%20of%20image.jpeg">
+</div>
 
-<!-- IMPORTANT: WORKING LINK -->
-<img src="https://raw.githubusercontent.com/Aditi1485/Image-Encryption-and-decryption-using-logistic-map-for-medical-field/main/Block%20Diagram%20representing%20the%20process%20of%20encryption%20and%20decryption%20of%20image.jpeg">
+<div class="section">
+<h2>🖼️ Results</h2>
 
+<h3>Grayscale Conversion</h3>
+<img src="https://raw.githubusercontent.com/jaya1109/Image-Encryption-and-decryption-using-logistic-map-for-medical-field/main/conversion%20of%20original%20image%20to%20gray%20scale.jpeg">
+<p>
+The original image is converted into grayscale to simplify processing and improve encryption efficiency.
+</p>
+
+<h3>Encrypted Image</h3>
+<img src="https://raw.githubusercontent.com/jaya1109/Image-Encryption-and-decryption-using-logistic-map-for-medical-field/main/logical%20sequence.jpeg">
+<p>
+After applying chaotic encryption, the image becomes highly distorted and unreadable, ensuring strong data security.
+</p>
+
+</div>
+
+<div class="section">
+<h2>💻 Source Code</h2>
+<a href="https://github.com/Aditi1485/Image-Encryption-and-decryption-using-logistic-map-for-medical-field" target="_blank">
+🔗 View Code on GitHub
+</a>
 </div>
 
 <div class="section">
 <h2>📌 Conclusion</h2>
 <p>
-This project demonstrates the application of chaos theory in image encryption.
-The logistic map provides high randomness and sensitivity, making the encryption secure and reliable.
+This project demonstrates the effective use of chaos theory in securing digital images using logistic map-based encryption. 
+The system transforms the original image into a highly random encrypted format, ensuring strong data protection.
 
-The system ensures that the image is transformed into an unreadable format and can be accurately recovered.
-This method is highly suitable for securing sensitive medical images.
+Due to the sensitivity of the logistic map to initial conditions, the encryption becomes highly secure and difficult to break. 
+The decryption process accurately reconstructs the original image using the same key, ensuring reliability.
+
+Compared to traditional encryption methods, this approach provides enhanced randomness and better resistance to attacks. 
+It is highly suitable for securing sensitive medical images where privacy and data integrity are essential.
+
+Overall, this project presents a practical and efficient solution for secure image transmission in modern digital systems.
 </p>
 </div>
 
